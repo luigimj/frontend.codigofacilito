@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,16 +25,16 @@
     </video>
   </div>
 
-  <div class="row full-height middle-xs center-xs relative up">
-    
-    <div class="col-xs-12">      
+  <div class="row full-height middle-xs center-xs relative up" id="home">
+
+    <div class="col-xs-12">
       <div class="box white-text">
         <img src="images/logo.png" alt="Logo" width="200">
         <h1 class="dancing-script title no-margin">Restaurante Facilito</h1>
         <p id="is-open"><i class="glyphicon glyphicon-time"></i> Abierto ahora</p>
       </div>
 
-      <nav class="fixed top right white-text navigation" id="navitagion">
+      <nav class="fixed top right white-text main-nav" id="navigation">
         <ul class="list-inline">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Menú</a></li>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-xs" id="stickyNavigation">
           <div class="box">
-            <nav class="text-right navigation">
+            <nav class="text-right main-nav">
               <ul class="list-inline">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Menú</a></li>
@@ -64,14 +64,112 @@
             </nav>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
   </div>
 
-  <div class="full-height">
+  <div class="text-center relative" id="menu">
+
+    <div class="absolute bg-white" id="menu-title">
+      <h2 class="dancing-script title">Menu</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/club-sandwich-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Club Sandwich</h3>
+              <p class="no-margin">10.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/combo-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Combo Hamburguesa</h3>
+              <p class="no-margin">23.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/hamburger-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Hamburguesa</h3>
+              <p class="no-margin">15.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/hot-cakes-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Hot Cakes</h3>
+              <p class="no-margin">20.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/panini-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Panini</h3>
+              <p class="no-margin">7.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/papas-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Papas</h3>
+              <p class="no-margin">18.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/club-sandwich-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Club Sandwich</h3>
+              <p class="no-margin">21.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+        style="background-image: url(images/food/combo-thumb.jpg)">
+        <div class="screen">
+          <div class="row middle-xs full-height">
+            <div class="col-xs-12 white-text">
+              <h3 class="dancing-script subtitle">Combo Hamburgesa</h3>
+              <p class="no-margin">5.00 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </div>
+
 
   <script src="js/vendor/modernizr-3.5.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

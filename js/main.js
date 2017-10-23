@@ -1,7 +1,6 @@
 ;(function() {
-  
+
   let sticky = false
-  //$("#sticky-navigation").removeClass('hidden')
   $("#stickyNavigation").slideUp(0)
 
   $(window).scroll(function() {
@@ -16,12 +15,12 @@
       // Hide stick navigation
       sticky = false
       unStickNavigation()
-    }    
+    }
   })
 
   function stickNavigation () {
     $('#description').addClass('fixed').removeClass('absolute')
-    $('#navigation').slideUp('fast')
+    $('#navigation').slideUp('fast');
     $('#stickyNavigation').slideDown('fast')
   }
 
@@ -35,7 +34,7 @@
     const $description = $('#description')
     const descriptionHeight = $description.height()
 
-    return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2);
+    return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2.5);
   }
 
 })()
