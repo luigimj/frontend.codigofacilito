@@ -1,7 +1,21 @@
 ;(function() {
 
   let sticky = false
+  let currentPosition = 0
+  const imageCounter = $("[data-name='imageCounter']").attr('content')
+
+  console.log(imageCounter)
+
   $("#stickyNavigation").slideUp(0)
+
+  setInterval(()=>{
+    if (currentPosition < imageCounter) {
+      currentPosition++
+    } else {
+      currentPosition = 0
+    }
+    $("#gallery .inner").css({left: '-'+ currentPosition*100 +'%'})
+  }, 3000)
 
   $(window).scroll(function() {
     const inBottom = isInBottom()

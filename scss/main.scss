@@ -191,6 +191,30 @@ textarea {
   left: calc(50% - 150px);
 }
 
+#gallery {
+  width: 100%;
+  overflow-x: hidden;
+  .inner {
+    white-space: nowrap;
+    position: relative;
+    left: 0%;
+    transition: left 1.5s;
+  }
+  .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: -4px;
+    height:100vh;
+    width: 100%;
+  }
+}
+
+.card {
+
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -247,6 +271,10 @@ textarea {
   background-color: #fff;
 }
 
+.black-text {
+  color: #000;
+}
+
 .white-text {
   color: #fff;
 }
@@ -261,6 +289,10 @@ textarea {
 
 .medium {
   font-size: 1.5em;
+}
+
+.slim {
+  font-weight: 200;
 }
 
 .dancing-script {

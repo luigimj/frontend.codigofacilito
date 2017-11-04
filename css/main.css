@@ -141,6 +141,23 @@ textarea {
   top: calc(50% - 3em);
   left: calc(50% - 150px); }
 
+#gallery {
+  width: 100%;
+  overflow-x: hidden; }
+  #gallery .inner {
+    white-space: nowrap;
+    position: relative;
+    left: 0%;
+    transition: left 1.5s; }
+  #gallery .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: -4px;
+    height: 100vh;
+    width: 100%; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -183,6 +200,9 @@ textarea {
 .bg-white {
   background-color: #fff; }
 
+.black-text {
+  color: #000; }
+
 .white-text {
   color: #fff; }
 
@@ -194,6 +214,9 @@ textarea {
 
 .medium, .main-nav li {
   font-size: 1.5em; }
+
+.slim {
+  font-weight: 200; }
 
 .dancing-script {
   font-family: 'Dancing Script', cursive; }
